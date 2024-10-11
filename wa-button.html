@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating WhatsApp Button</title>
+    <style>
+        /* CSS untuk tombol WhatsApp yang bulat dan melayang */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        /* CSS untuk ikon WhatsApp */
+        .whatsapp-float i {
+            margin-top: 15px;
+        }
+
+        /* Animasi melayang (hover) */
+        .whatsapp-float:hover {
+            background-color: #20c35a;
+            box-shadow: 0px 0px 15px 5px #999;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tombol WhatsApp -->
+    <a href="https://wa.me/62XXXXXXXXXX?text=Halo,%20saya%20ingin%20menghubungi%20Anda" class="whatsapp-float" target="_blank">
+        <i>&#x2709;</i> <!-- Ikon WhatsApp menggunakan karakter unicode (atau bisa gunakan gambar ikon) -->
+    </a>
+
+</body>
+</html>

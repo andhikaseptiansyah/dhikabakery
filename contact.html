@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhika Bakery</title>
+     <!--Font awesome cdn link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <!--custom css file link-->
+     <link rel="stylesheet" href="contact.css"> 
+</head>
+<body>
+
+    <!--Header section starts-->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">Contact <span>Us</span></a>
+       <nav class="navbar">
+        <a href="bread.html">Product</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">Contact</a>
+       </nav>
+        <div class="icons">
+            <a href="halaman1.html" class="fas fa-home"></a>
+            <a href="maps.html" class="fas fa-map-location-dot"></a>
+            
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <h1 class="heading"></h1>
+        <h1 class="heading"></h1>
+        <p>If you have any questions or need further information, feel free to contact us by filling out the form below.</p>
+        
+        <form action="process_contact" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <label for="subscribe">
+                <input type="checkbox" id="subscribe" name="subscribe"> I would like to receive promotional emails from Dhika Bakery.
+            </label>
+
+            <label for="preferred-product">Preferred Product:</label>
+            <select id="preferred-product" name="preferred_product">
+                <option value="bread">Bread</option>
+                <option value="cake">Cake</option>
+                <option value="pastry">Pastry</option>
+            </select>
+
+            <a class="btn" onclick="pop()">Send Massage</a>
+            <div id="box">
+              <i class="fas fa-check-circle"></i> 
+              <h1>Good Job</h1>
+              <a class="close" onclick="pop()">Close</a>
+            </div>
+          <script src="popupcontact.js"></script>
+        </form>
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="maps.html">Maps</a>
+                <a href="bread.html">Cake and Bread</a>
+                <a href="donat.html">Danut</a>
+            </div>
+            <div class="box">
+                <h3>Extra links</h3>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">my Order</a>
+            </div>
+            <div class="box">
+                <h3>Locations</h3>
+                <a href="#">india</a>
+                <a href="#">Indonesia</a>
+                <a href="#">France</a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+62 857-1440-0533</a>
+                <a href="#">andhikaseptiansyah63@gmail.com</a>
+                <a href="#">Andhika Septiasnyah</a>
+           
+            </div>
+        </div>
+        <div class="credit">
+            &copy; Created by <span> Dhika Bakery</span> All Right Reserved.
+        </div>
+    </section>
+
+
+</body>
+</html>
